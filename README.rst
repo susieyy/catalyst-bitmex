@@ -10,7 +10,7 @@ Usage
 
 ::
 
-    pip install zipline-poloniex
+    pip install zipline-bitmex
 
 . You may want to run this command with ``--user`` parameter.
 
