@@ -96,7 +96,8 @@ def bitmex(symbols: list):
 			end_session,
 			cache,
 			show_progress,
-			output_dir):
+			output_dir,
+			path):
 		sid_map = list(zip(range(len(symbols)), symbols))
 		asset_db_writer.write(futures=_get_metadata(sid_map))
 		minute_bar_writer.write(
