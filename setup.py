@@ -7,5 +7,5 @@ setup(
 		license='GPL',
 		description='BitMEX bundle for Catalyst',
 		long_description=open('README.rst').read(),
-		install_requires=['requests', 'catalyst>=0.5.0'],
+		install_requires=['requests', 'enigma-catalyst>=0.5.0'],
 		packages=['catalyst_bitmex'])
