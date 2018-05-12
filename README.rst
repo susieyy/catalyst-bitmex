@@ -1,7 +1,7 @@
-Zipline BitMEX
+Catalyst BitMEX
 ==============
 
-BitMEX bundle for `Zipline <https://github.com/quantopian/zipline>`_
+BitMEX bundle for `Catalyst <https://github.com/enigmampc/catalyst>`_
 
 Usage
 -----
@@ -10,18 +10,18 @@ Usage
 
 ::
 
-    pip install zipline-bitmex
+    pip install git+https://github.com/susieyy/catalyst-bitmex
 
 . You may want to run this command with ``--user`` parameter.
 
-2. Register this package to Zipline by writing following content to
-   ``$HOME/.zipline/extension.py``:
+2. Register this package to Catalyst by writing following content to
+   ``$HOME/.catalyst/extension.py``:
 
 .. code:: python
 
     import pandas as pd
-    from zipline.data.bundles import register
-    from zipline_bitmex import bitmex
+    from catalyst.data.bundles import register
+    from catalyst_bitmex import bitmex
 
     start = pd.Timestamp('2017-08-01', tz='utc')
     end = pd.Timestamp('2017-08-08', tz='utc')
@@ -38,4 +38,4 @@ Usage
 
 ::
 
-    zipline ingest -b bitmex
+    catalyst ingest -b bitmex

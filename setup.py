@@ -1,13 +1,11 @@
 from setuptools import setup
 
 setup(
-		name='zipline-bitmex',
-		version='0.1.1',
-		url='https://github.com/nerdDan/zipline_bitmex',
+		name='catalyst-bitmex',
+		version='0.1.0',
+		url='https://github.com/susieyy/catalyst_bitmex',
 		license='GPL',
-		author='Daniel Zhou',
-		author_email='danichau93@gmail.com',
-		description='BitMEX bundle for Zipline',
+		description='BitMEX bundle for Catalyst',
 		long_description=open('README.rst').read(),
-		install_requires=['requests', 'zipline>=1.1.1'],
-		packages=['zipline_bitmex'])
+		install_requires=['requests', 'catalyst>=5.0.0'],
+		packages=['catalyst_bitmex'])

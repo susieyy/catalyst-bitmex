@@ -1,8 +1,8 @@
 from datetime import time
 from pytz import timezone
 from pandas.tseries.offsets import CustomBusinessDay
-from zipline.utils.calendars import TradingCalendar
-from zipline.utils.memoize import lazyval
+from catalyst.utils.calendars import TradingCalendar
+from catalyst.utils.memoize import lazyval
 
 
 class BitmexCalendar(TradingCalendar):

@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 from datetime import timedelta
 from requests import get
-from zipline.utils.calendars import register_calendar
-from zipline.utils.cli import maybe_show_progress
+from catalyst.utils.calendars import register_calendar
+from catalyst.utils.cli import maybe_show_progress
 
 from .cal import BitmexCalendar
 
